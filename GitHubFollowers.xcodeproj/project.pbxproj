@@ -13,6 +13,13 @@
 		3175CBCC2962FEAD004051ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3175CBCA2962FEAD004051ED /* LaunchScreen.storyboard */; };
 		3175CBD4296BDB8D004051ED /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3175CBD3296BDB8D004051ED /* SearchVC.swift */; };
 		3175CBD6296BDBB5004051ED /* FavoritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3175CBD5296BDBB5004051ED /* FavoritesListVC.swift */; };
+		3175CBD8296BE508004051ED /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3175CBD7296BE507004051ED /* GFButton.swift */; };
+		3175CBDA296BE855004051ED /* GFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3175CBD9296BE855004051ED /* GFTextField.swift */; };
+		3175CBDC296C0406004051ED /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3175CBDB296C0406004051ED /* FollowerListVC.swift */; };
+		3175CBDE296C0859004051ED /* GFTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3175CBDD296C0859004051ED /* GFTitleLabel.swift */; };
+		3175CBE0296C09AF004051ED /* GFBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3175CBDF296C09AF004051ED /* GFBodyLabel.swift */; };
+		3175CBE2296C0A69004051ED /* GFAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3175CBE1296C0A69004051ED /* GFAlertVC.swift */; };
+		3175CBE4296C0FC0004051ED /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3175CBE3296C0FC0004051ED /* UIViewController+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		3175CBCD2962FEAD004051ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3175CBD3296BDB8D004051ED /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		3175CBD5296BDBB5004051ED /* FavoritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListVC.swift; sourceTree = "<group>"; };
+		3175CBD7296BE507004051ED /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
+		3175CBD9296BE855004051ED /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
+		3175CBDB296C0406004051ED /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
+		3175CBDD296C0859004051ED /* GFTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTitleLabel.swift; sourceTree = "<group>"; };
+		3175CBDF296C09AF004051ED /* GFBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFBodyLabel.swift; sourceTree = "<group>"; };
+		3175CBE1296C0A69004051ED /* GFAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertVC.swift; sourceTree = "<group>"; };
+		3175CBE3296C0FC0004051ED /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,54 @@
 		3175CBBE2962FEA8004051ED /* GitHubFollowers */ = {
 			isa = PBXGroup;
 			children = (
+				3175CBE8296C1281004051ED /* Support */,
+				3175CBE7296C1222004051ED /* Extentions */,
+				3175CBE6296C11F1004051ED /* Custom Views */,
+				3175CBE5296C11BB004051ED /* Screens */,
+			);
+			path = GitHubFollowers;
+			sourceTree = "<group>";
+		};
+		3175CBE5296C11BB004051ED /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				3175CBD3296BDB8D004051ED /* SearchVC.swift */,
+				3175CBD5296BDBB5004051ED /* FavoritesListVC.swift */,
+				3175CBDB296C0406004051ED /* FollowerListVC.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		3175CBE6296C11F1004051ED /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				3175CBE1296C0A69004051ED /* GFAlertVC.swift */,
+				3175CBD7296BE507004051ED /* GFButton.swift */,
+				3175CBD9296BE855004051ED /* GFTextField.swift */,
+				3175CBDD296C0859004051ED /* GFTitleLabel.swift */,
+				3175CBDF296C09AF004051ED /* GFBodyLabel.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		3175CBE7296C1222004051ED /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				3175CBE3296C0FC0004051ED /* UIViewController+Ext.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		3175CBE8296C1281004051ED /* Support */ = {
+			isa = PBXGroup;
+			children = (
 				3175CBBF2962FEA8004051ED /* AppDelegate.swift */,
 				3175CBC12962FEA8004051ED /* SceneDelegate.swift */,
 				3175CBC82962FEAD004051ED /* Assets.xcassets */,
 				3175CBCA2962FEAD004051ED /* LaunchScreen.storyboard */,
 				3175CBCD2962FEAD004051ED /* Info.plist */,
-				3175CBD3296BDB8D004051ED /* SearchVC.swift */,
-				3175CBD5296BDBB5004051ED /* FavoritesListVC.swift */,
 			);
-			path = GitHubFollowers;
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +190,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3175CBDA296BE855004051ED /* GFTextField.swift in Sources */,
 				3175CBD6296BDBB5004051ED /* FavoritesListVC.swift in Sources */,
+				3175CBD8296BE508004051ED /* GFButton.swift in Sources */,
+				3175CBE4296C0FC0004051ED /* UIViewController+Ext.swift in Sources */,
 				3175CBD4296BDB8D004051ED /* SearchVC.swift in Sources */,
+				3175CBE2296C0A69004051ED /* GFAlertVC.swift in Sources */,
+				3175CBE0296C09AF004051ED /* GFBodyLabel.swift in Sources */,
+				3175CBDE296C0859004051ED /* GFTitleLabel.swift in Sources */,
+				3175CBDC296C0406004051ED /* FollowerListVC.swift in Sources */,
 				3175CBC02962FEA8004051ED /* AppDelegate.swift in Sources */,
 				3175CBC22962FEA8004051ED /* SceneDelegate.swift in Sources */,
 			);
