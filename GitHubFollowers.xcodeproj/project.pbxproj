@@ -24,6 +24,10 @@
 		3175CBED296D360C004051ED /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3175CBEC296D360C004051ED /* User.swift */; };
 		3175CBF0296D684C004051ED /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3175CBEF296D684C004051ED /* NetworkManager.swift */; };
 		3175CBF3296D71E0004051ED /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3175CBF2296D71E0004051ED /* ErrorMessage.swift */; };
+		3175CBF6296D77FC004051ED /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3175CBF5296D77FC004051ED /* FollowerCell.swift */; };
+		3175CBF8296D788E004051ED /* GFAvatarImageVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3175CBF7296D788E004051ED /* GFAvatarImageVIew.swift */; };
+		3175CBFA296D8B5D004051ED /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3175CBF9296D8B5D004051ED /* UIHelper.swift */; };
+		3175CC02296EDFEC004051ED /* GFEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3175CC01296EDFEC004051ED /* GFEmptyStateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +50,10 @@
 		3175CBEC296D360C004051ED /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3175CBEF296D684C004051ED /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		3175CBF2296D71E0004051ED /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		3175CBF5296D77FC004051ED /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
+		3175CBF7296D788E004051ED /* GFAvatarImageVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageVIew.swift; sourceTree = "<group>"; };
+		3175CBF9296D8B5D004051ED /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		3175CC01296EDFEC004051ED /* GFEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFEmptyStateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,11 +111,13 @@
 		3175CBE6296C11F1004051ED /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
-				3175CBE1296C0A69004051ED /* GFAlertVC.swift */,
-				3175CBD7296BE507004051ED /* GFButton.swift */,
-				3175CBD9296BE855004051ED /* GFTextField.swift */,
-				3175CBDD296C0859004051ED /* GFTitleLabel.swift */,
-				3175CBDF296C09AF004051ED /* GFBodyLabel.swift */,
+				3175CC00296EDFA0004051ED /* Labels */,
+				3175CBFF296EDF8C004051ED /* ViewControllers */,
+				3175CBFE296EDF83004051ED /* ImageViews */,
+				3175CBFD296EDF7C004051ED /* TextFields */,
+				3175CBFC296EDF75004051ED /* Buttons */,
+				3175CBFB296EDF6A004051ED /* Views */,
+				3175CBF4296D77E4004051ED /* Cells */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -152,8 +162,66 @@
 			isa = PBXGroup;
 			children = (
 				3175CBF2296D71E0004051ED /* ErrorMessage.swift */,
+				3175CBF9296D8B5D004051ED /* UIHelper.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		3175CBF4296D77E4004051ED /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3175CBF5296D77FC004051ED /* FollowerCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		3175CBFB296EDF6A004051ED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3175CC01296EDFEC004051ED /* GFEmptyStateView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3175CBFC296EDF75004051ED /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				3175CBD7296BE507004051ED /* GFButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		3175CBFD296EDF7C004051ED /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				3175CBD9296BE855004051ED /* GFTextField.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		3175CBFE296EDF83004051ED /* ImageViews */ = {
+			isa = PBXGroup;
+			children = (
+				3175CBF7296D788E004051ED /* GFAvatarImageVIew.swift */,
+			);
+			path = ImageViews;
+			sourceTree = "<group>";
+		};
+		3175CBFF296EDF8C004051ED /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3175CBE1296C0A69004051ED /* GFAlertVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3175CC00296EDFA0004051ED /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				3175CBDD296C0859004051ED /* GFTitleLabel.swift */,
+				3175CBDF296C09AF004051ED /* GFBodyLabel.swift */,
+			);
+			path = Labels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,12 +299,16 @@
 				3175CBD6296BDBB5004051ED /* FavoritesListVC.swift in Sources */,
 				3175CBD8296BE508004051ED /* GFButton.swift in Sources */,
 				3175CBE4296C0FC0004051ED /* UIViewController+Ext.swift in Sources */,
+				3175CBFA296D8B5D004051ED /* UIHelper.swift in Sources */,
 				3175CBD4296BDB8D004051ED /* SearchVC.swift in Sources */,
+				3175CBF8296D788E004051ED /* GFAvatarImageVIew.swift in Sources */,
 				3175CBE2296C0A69004051ED /* GFAlertVC.swift in Sources */,
 				3175CBF3296D71E0004051ED /* ErrorMessage.swift in Sources */,
+				3175CBF6296D77FC004051ED /* FollowerCell.swift in Sources */,
 				3175CBE0296C09AF004051ED /* GFBodyLabel.swift in Sources */,
 				3175CBEB296D3542004051ED /* Follower.swift in Sources */,
 				3175CBDE296C0859004051ED /* GFTitleLabel.swift in Sources */,
+				3175CC02296EDFEC004051ED /* GFEmptyStateView.swift in Sources */,
 				3175CBF0296D684C004051ED /* NetworkManager.swift in Sources */,
 				3175CBDC296C0406004051ED /* FollowerListVC.swift in Sources */,
 				3175CBC02962FEA8004051ED /* AppDelegate.swift in Sources */,
