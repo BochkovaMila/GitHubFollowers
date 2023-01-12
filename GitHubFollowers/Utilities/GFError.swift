@@ -1,8 +1,8 @@
 //
-//  ErrorMessage.swift
+//  GFError.swift
 //  GitHubFollowers
 //
-//  Created by Mila B on 10.01.2023.
+//  Created by Mila B on 12.01.2023.
 //
 
 import Foundation
