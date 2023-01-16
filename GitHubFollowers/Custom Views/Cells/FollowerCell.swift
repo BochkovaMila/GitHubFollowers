@@ -8,28 +8,31 @@
 import UIKit
 
 class FollowerCell: UICollectionViewCell {
-    static let reuseID  = "FollowerCell"
     
+    static let reuseID  = "FollowerCell"
     let avatarImageView = GFAvatarImageVIew(frame: .zero)
     let usernameLabel   = GFTitleLabel(textAlignment: .center, fontSize: 16)
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
     }
     
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+    
     func set(follower: Follower) {
+        avatarImageView.downloadImage(fromURL: follower.avatarUrl)
         usernameLabel.text = follower.login
-        avatarImageView.downloadImage(from: follower.avatarUrl)
     }
     
+    
     private func configure() {
-        addSubview(avatarImageView)
-        addSubview(usernameLabel)
+        addSubviews(avatarImageView, usernameLabel)
         
         let padding: CGFloat = 8
         
